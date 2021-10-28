@@ -4,7 +4,6 @@ function move_lenny() {
   grad_back.style.opacity = "0";
 
   this.classList.add("hidden-lenny");
-  /* TODO: find better way to add listener on end of lenny transition */
   lenny.addEventListener("transitionend", open_gallery);
 }
 
