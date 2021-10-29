@@ -1,7 +1,6 @@
 
 function scroll_to_image(e) {
-    console.log(e);
-    if (e.originalTarget == this) {
+    if (e.target == this) {
         this.scrollIntoView({ behavior: "smooth", block: "center" });
         this.removeEventListener(e.type, scroll_to_image);
     }
